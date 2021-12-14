@@ -1,25 +1,35 @@
 {
   "name": "discord-bot-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "Discord bot template, built with discord.js and typescirpt",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
     "dev": "concurrently \"tsc -w\" \"nodemon build index.js\"",
-    "deploy:commands": "tsc && node build/deployCommands.js"
+    "deploy:commands": "tsc && node build/deployCommands.js",
+    "pretty": "prettier --check src",
+    "lint": "yarn pretty && eslint --ext ts,tsx,json src"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["discord-bot", "discord"],
+  "author": "T-DaMER",
   "license": "ISC",
   "engines": {
     "node": "^16.6.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "@types/express": "4.17.13",
     "concurrently": "6.4.0",
     "nodemon": "2.0.15",
-    "typescript": "4.4.4"
+    "typescript": "4.4.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "prettier": "^2.4.1"
+    
   },
   "dependencies": {
     "@discordjs/rest": "^0.1.0-canary.0",

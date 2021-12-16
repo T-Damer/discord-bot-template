@@ -20,4 +20,4 @@ client.on('interationCreate', async (interaction) => {
   commands[commandName].execute(interaction, client)
 })
 
-client.login(config.DISCORD_TOKEN)
+client.login(config.DISCORD_BOT_TOKEN)

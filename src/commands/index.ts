@@ -1,2 +1,2 @@
-export * as ping from 'commands/ping'
-export * as help from 'commands/help'
+export * as ping from './ping'
+export * as help from './help'

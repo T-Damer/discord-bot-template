@@ -1,6 +1,6 @@
 import { Client } from 'discord.js'
-import config from 'config'
-import * as commandModules from 'commands'
+import config from './config'
+import * as commandModules from './commands'
 
 const commands = Object(commandModules)
 

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node build/index.js",
-    "dev": "yarn deploy:commands && concurrently \"tsc -w\" \"nodemon build index.js\"",
+    "dev": "yarn deploy:commands && concurrently \"tsc -w\" \"nodemon build/index.js\"",
     "deploy:commands": "tsc && node build/deployCommands.js",
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --ext ts,tsx,json src"

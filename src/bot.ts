@@ -10,6 +10,9 @@ export const client = new Client({
 
 client.once('ready', () => {
   console.log('Discord 🤖 is ready')
+  console.log(
+    `Link to invite: https://discord.com/api/oauth2/authorize?client_id=${config.CLIENT_ID}&permissions=0&scope=bot%20applications.commands`
+  )
 })
 
 client.on('interationCreate', async (interaction) => {

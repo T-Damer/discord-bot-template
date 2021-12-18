@@ -4,10 +4,10 @@
   "description": "Discord bot template, built with discord.js and typescirpt",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node build/index.js",
-    "dev": "yarn deploy:commands && concurrently \"tsc -w\" \"nodemon build/index.js\"",
-    "deploy:commands": "tsc && node build/deployCommands.js",
+    "start": "yarn build && node build/index.js",
+    "dev": "yarn build && concurrently \"tsc -w\" \"nodemon build/index.js\"",
+    "build": "tsc && yarn deploy:commands",
+    "deploy:commands": "node build/deployCommands.js",
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --ext ts,tsx,json src"
   },

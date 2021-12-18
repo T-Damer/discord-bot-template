@@ -19,7 +19,7 @@
     "template"
   ],
   "author": "T-DaMER",
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
     "node": "^16.6.0"
   },

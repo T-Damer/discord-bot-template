@@ -38,7 +38,7 @@ export async function execute(
   const problemDescription = interaction.options.data[0]
     .value as string
   const { user } = interaction
-  thread.send(`**User:** <@${user}>
+  thread.send(`**User:** <${user}>
   **Problem:**: ${problemDescription}`)
 
   // TODO: create a ticket and store it in database

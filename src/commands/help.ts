@@ -36,7 +36,7 @@ export async function execute(
   })
 
   const problemDescription =
-    interaction.options.getString('description')! // The description is required field
+    interaction.options.data[0].value
   const { user } = interaction
   thread.send(`**User:** <@${user}>
   **Problem:**: ${problemDescription}`)

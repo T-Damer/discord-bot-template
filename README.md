@@ -18,10 +18,6 @@ Written with TypeScript and Discord.js library, this template will help you to w
 6. Create `.env` file in project root, use `.env.example` to fill it properly
 7. Run `yarn dev` and try sending `/help` or `/ping` into your `text-channel`
 
-## .env
-
-Consider looking into `.env.example`
-
 ## Available Scripts
 
 - `yarn dev` — runs the app in the development mode
@@ -35,6 +31,8 @@ Consider looking into `.env.example`
 | DISCORD_BOT_TOKEN | In [discord for developers](discordDevs) go to `bot` tab and click `Regenerate` button            |
 | CLIENT_ID         | Get it in `General Information` tab inside [discord for developers](discordDevs)                  |
 | GUILD_ID          | Enter in development mode inside **Discord** (check settings->Advanced). Use RMB to copy the data |
+
+Consider looking into `.env.example`
 
 ---
 

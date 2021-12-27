@@ -1,11 +1,15 @@
-import { Client } from 'discord.js'
+import { Client, Intents, Interaction } from 'discord.js'
 import config from './config'
 import * as commandModules from './commands'
 
 const commands = Object(commandModules)
 
 export const client = new Client({
-  intents: ['GUILDS', 'GUILD_MESSAGES', 'DIRECT_MESSAGES'],
+  intents: [
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES,
+    Intents.FLAGS.DIRECT_MESSAGES,
+  ],
 })
 
 client.once('ready', (client) => {
@@ -15,7 +19,7 @@ client.once('ready', (client) => {
   )
 })
 
-client.on('interationCreate', async (interaction) => {
+client.on('interactionCreate', (interaction) => {
   if (!interaction.isCommand()) {
     return
   }

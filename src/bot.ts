@@ -24,7 +24,9 @@ client.on('interactionCreate', (interaction) => {
     return
   }
   const { commandName } = interaction
-  commands[commandName].execute(interaction, client)
+  if (commands[commandName]) {
+    commands[commandName].execute(interaction, client)
+  }
 })
 
 client.login(config.DISCORD_BOT_TOKEN)

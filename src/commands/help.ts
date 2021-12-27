@@ -35,8 +35,8 @@ export async function execute(
     reason: `Support ticket ${Date.now()}`,
   })
 
-  const problemDescription =
-    interaction.options.data[0].value
+  const problemDescription = interaction.options.data[0]
+    .value as string
   const { user } = interaction
   thread.send(`**User:** <@${user}>
   **Problem:**: ${problemDescription}`)

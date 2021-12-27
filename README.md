@@ -28,8 +28,8 @@ Written with TypeScript and Discord.js library, this template will help you to w
 
 | Name              | Description                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------- |
-| DISCORD_BOT_TOKEN | In [discord for developers](discordDevs) go to `bot` tab and click `Regenerate` button            |
-| CLIENT_ID         | Get it in `General Information` tab inside [discord for developers](discordDevs)                  |
+| DISCORD_BOT_TOKEN | In [discord for developers](discorddevs) go to `bot` tab and click `Regenerate` button            |
+| CLIENT_ID         | Get it in `General Information` tab inside [discord for developers](discorddevs)                  |
 | GUILD_ID          | Enter in development mode inside **Discord** (check settings->Advanced). Use RMB to copy the data |
 
 Consider looking into `.env.example`
@@ -40,4 +40,4 @@ Consider looking into `.env.example`
 
 <a href="https://www.buymeacoffee.com/tdamer"><img src="https://img.buymeacoffee.com/button-api/?text=Support me with a coffee&emoji=☕️&slug=tdamer&button_colour=ffcc33&font_colour=000&font_family=Lato&outline_colour=000&coffee_colour=000"></a>
 
-[discorddevs]: (https://discord.com/developers)
+[discorddevs]: https://discord.com/developers

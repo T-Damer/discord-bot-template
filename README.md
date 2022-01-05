@@ -4,7 +4,7 @@
 
 ---
 
-Written with TypeScript and Discord.js library, this template will help you to write and deploy your discrod 🤖
+Written with TypeScript and Discord.js library, this template will help you to create and deploy your discrod 🤖
 
 ---
 

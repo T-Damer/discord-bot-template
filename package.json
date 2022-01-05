@@ -1,7 +1,7 @@
 {
   "name": "discord-bot-template",
   "version": "1.0.0",
-  "description": "Discord bot template, built with discord.js and typescirpt",
+  "description": "Discord bot template, built with Discord.js andTypeScript",
   "main": "index.js",
   "scripts": {
     "start": "yarn build && node build/index.js",
@@ -10,6 +10,10 @@
     "deploy:commands": "node build/deployCommands.js",
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --ext ts,tsx,json src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Damer/discord-bot-template"
   },
   "keywords": [
     "discord-bot",

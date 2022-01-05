@@ -4,7 +4,16 @@
 
 ---
 
-Written with TypeScript and Discord.js library, this template will help you to create and deploy your discrod 🤖
+Written with TypeScript and Discord.js library, this template will help you to create and deploy your Discrod bot 🤖
+
+[Try inviting him :)](https://discord.com/api/oauth2/authorize?client_id=928264902181789806&permissions=0&scope=bot%20applications.commands)
+
+---
+
+## Available bot commands
+
+- `/ping` - responds with _pong_
+- `/help {description}` - creates a thread, with specified problem
 
 ---
 

@@ -4,16 +4,7 @@
 
 ---
 
-Written with TypeScript and Discord.js library, this template will help you to create and deploy your Discrod bot 🤖
-
-[Try inviting him :)](https://discord.com/api/oauth2/authorize?client_id=928264902181789806&permissions=0&scope=bot%20applications.commands)
-
----
-
-## Available bot commands
-
-- `/ping` - responds with _pong_
-- `/help {description}` - creates a thread, with specified problem
+Written with TypeScript and Discord.js library, this template will help you to create and deploy your discrod 🤖
 
 ---
 
@@ -43,9 +34,15 @@ Written with TypeScript and Discord.js library, this template will help you to c
 
 Consider looking into `.env.example`
 
----
+# Deploying to Heroku
 
-<a href="https://discord.com/api/oauth2/authorize?client_id=919657986639687710&permissions=380104608768&scope=applications.commands%20bot">Try Pizza Time Discord Bot!</a>
+1. Create a (new) Heroku account
+2. Take a look into `Procfile` on `production` branch
+3. Build bot and push `build` folder into separate branch (or use `production` branch from this repo)
+4. Connect Heroku account with your GitHub repo with your bot and `Deploy` the bot to Heroku
+5. On Heroku dashboard go to `Resources`, disable `web` and enable `worker`
+
+---
 
 <a href="https://www.buymeacoffee.com/tdamer"><img src="https://img.buymeacoffee.com/button-api/?text=Support me with a coffee&emoji=☕️&slug=tdamer&button_colour=ffcc33&font_colour=000&font_family=Lato&outline_colour=000&coffee_colour=000"></a>
 

@@ -1,9 +1,9 @@
-import { SlashCommandBuilder } from '@discordjs/builders'
 import {
-  CommandInteraction,
   Client,
+  CommandInteraction,
   TextChannel,
 } from 'discord.js'
+import { SlashCommandBuilder } from '@discordjs/builders'
 
 export const data = new SlashCommandBuilder()
   .setName('help')
@@ -38,7 +38,7 @@ export async function execute(
   const problemDescription = interaction.options.data[0]
     .value as string
   const { user } = interaction
-  thread.send(`**User:** <${user}>
+  await thread.send(`**User:** <${user}>
   **Problem:**: ${problemDescription}`)
 
   // TODO: create a ticket and store it in database

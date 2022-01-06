@@ -4,12 +4,12 @@
   "description": "Discord bot template, built with Discord.js andTypeScript",
   "main": "index.js",
   "scripts": {
-    "start": "yarn build && node build/index.js",
-    "dev": "yarn build && concurrently \"tsc -w\" \"nodemon build/index.js\"",
-    "build": "tsc && yarn deploy:commands",
-    "deploy:commands": "node build/deployCommands.js",
+    "start": "yarn build-ts && node dist/index.js",
+    "develop": "yarn build-ts && tsc-watch --skipLibCheck --onSuccess 'node dist/server.js'",
+    "build-ts": "tsc --skipLibCheck && yarn deploy:commands",
+    "deploy:commands": "node dist/helpers/deployCommands.js",
     "pretty": "prettier --check src",
-    "lint": "yarn pretty && eslint --ext ts,tsx,json src"
+    "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
   },
   "repository": {
     "type": "git",
@@ -25,25 +25,36 @@
   "author": "T-DaMER",
   "license": "MIT",
   "engines": {
-    "node": ">=16.6.0"
+    "node": ">=16.13.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
     "@types/express": "4.17.13",
-    "concurrently": "6.5.1",
-    "nodemon": "2.0.15",
-    "typescript": "4.5.4",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "@types/node": "^17.0.8",
+    "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-no-relative-import-paths": "^1.1.0",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
-    "prettier": "^2.5.1"
+    "nodemon": "2.0.15",
+    "prettier": "^2.5.1",
+    "module-alias": "^2.2.2",
+    "source-map-support": "^0.5.21",
+    "tsc-watch": "^4.6.0",
+    "typescript": "4.5.4"
   },
   "dependencies": {
     "@discordjs/rest": "^0.2.0-canary.0",
-    "discord.js": "13.4.0",
+    "discord.js": "13.5.0",
     "dotenv": "10.0.0",
+    "envalid": "^7.2.2",
     "express": "4.17.2"
-  }
+  },
+  "_moduleAliases": {
+    "@": "dist"
+  },
+  "packageManager": "yarn@3.1.0"
 }

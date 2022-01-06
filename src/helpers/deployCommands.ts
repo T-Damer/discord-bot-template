@@ -1,7 +1,7 @@
+import * as commandModules from 'commands'
 import { REST } from '@discordjs/rest'
 import { Routes } from 'discord-api-types/v9'
-import config from './config'
-import * as commandModules from './commands'
+import cleanEnv from '@/helpers/env'
 
 type Command = {
   data: unknown
@@ -16,16 +16,18 @@ for (const module of Object.values<Command>(
 }
 
 const rest = new REST({ version: '9' }).setToken(
-  config.DISCORD_BOT_TOKEN
+  cleanEnv.DISCORD_BOT_TOKEN
 )
 
 rest
   .put(
     Routes.applicationGuildCommands(
-      config.CLIENT_ID,
-      config.GUILD_ID
+      cleanEnv.CLIENT_ID,
+      cleanEnv.GUILD_ID
     ),
-    { body: commands }
+    {
+      body: commands,
+    }
   )
   .then(() =>
     console.log(

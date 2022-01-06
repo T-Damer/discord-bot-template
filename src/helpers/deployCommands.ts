@@ -1,7 +1,9 @@
-import * as commandModules from 'commands'
 import { REST } from '@discordjs/rest'
 import { Routes } from 'discord-api-types/v9'
+import { help, ping } from '@/commands'
 import cleanEnv from '@/helpers/env'
+
+const commandModules = { help, ping }
 
 type Command = {
   data: unknown

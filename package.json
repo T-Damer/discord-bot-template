@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "yarn build-ts && node dist/index.js",
-    "develop": "yarn build-ts && tsc-watch --skipLibCheck --onSuccess 'node dist/server.js'",
+    "develop": "yarn build-ts && tsc-watch --skipLibCheck --onSuccess 'node dist/index.js'",
     "build-ts": "tsc --skipLibCheck",
-    "deploy:commands": "node dist/helpers/deployCommands.js",
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
   },

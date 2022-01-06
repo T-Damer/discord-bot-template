@@ -1,8 +1,8 @@
+import * as commandModules from '@/commands/index'
 import { Client, Intents } from 'discord.js'
-import { help, ping } from '@/commands/index'
 import config from '@/helpers/env'
 
-const commands = Object({ ping, help })
+const commands = Object(commandModules)
 
 export const client = new Client({
   intents: [

@@ -1,7 +1,7 @@
 {
   "name": "discord-bot-template",
   "version": "1.0.0",
-  "description": "Discord bot template, built with Discord.js andTypeScript",
+  "description": "Discord bot template, built with Discord.js and TypeScript",
   "main": "index.js",
   "scripts": {
     "start": "yarn build-ts && node dist/index.js",
@@ -11,11 +11,6 @@
     "pretty": "prettier --check src",
     "lint": "yarn pretty && eslint --max-warnings 0 --ext ts,tsx,json src"
   },
-  // && yarn deploy:commands
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/T-Damer/discord-bot-template"
-  },
   "keywords": [
     "discord-bot",
     "discord",
@@ -24,15 +19,16 @@
     "template"
   ],
   "author": "T-DaMER",
+  "repository": "https://github.com/T-Damer/discord-bot-template",
   "license": "MIT",
   "engines": {
     "node": ">=16.13.1"
   },
   "devDependencies": {
     "@types/express": "4.17.13",
+    "@types/node": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
-    "@types/node": "^17.0.8",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
@@ -40,9 +36,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "module-alias": "^2.2.2",
     "nodemon": "2.0.15",
     "prettier": "^2.5.1",
-    "module-alias": "^2.2.2",
     "source-map-support": "^0.5.21",
     "tsc-watch": "^4.6.0",
     "typescript": "4.5.4"

@@ -39,10 +39,8 @@ Consider looking into `.env.example`
 ## Deploying to Heroku
 
 1. Create a (new) Heroku account
-2. Take a look into `Procfile` on `production` branch
-3. Build bot and push `build` folder into separate branch (or use `production` branch from this repo)
-4. Connect Heroku account with your GitHub repo with your bot and `Deploy` the bot to Heroku
-5. On Heroku dashboard go to `Resources`, disable `web` and enable `worker`
+2. Connect Heroku account with your GitHub repo with your bot and `Deploy` the bot to Heroku
+3. On Heroku dashboard go to `Resources`, disable `web` and enable `worker`
 
 ---
 

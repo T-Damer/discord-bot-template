@@ -1,10 +1,12 @@
-# Discord bot template
+# [Discord bot template](https://discord.com/api/oauth2/authorize?client_id=928264902181789806&permissions=0&scope=bot%20applications.commands)
 
-<img src="https://user-images.githubusercontent.com/49658988/146060134-e174115a-75f3-4b9e-922d-a76be3606b40.png" height="300px" width="300px" />
+<a href="https://discord.com/api/oauth2/authorize?client_id=928264902181789806&permissions=0&scope=bot%20applications.commands"><img src="https://user-images.githubusercontent.com/49658988/146060134-e174115a-75f3-4b9e-922d-a76be3606b40.png" height="200px" width="200px" /></a>
 
 ---
 
-Written with TypeScript and Discord.js library, this template will help you to create and deploy your Discord bot 🤖
+Written with TypeScript and Discord.js library, this template will help you to create and deploy your Discord 🤖
+
+<a href="https://discord.com/api/oauth2/authorize?client_id=928264902181789806&permissions=0&scope=bot%20applications.commands"><img src="https://user-images.githubusercontent.com/49658988/148528450-63d0f1d7-19e7-40d5-9166-e6f10b82ee39.png" width="150"/></a>
 
 ---
 

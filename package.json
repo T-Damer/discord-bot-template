@@ -4,8 +4,7 @@
   "description": "Discord bot template, built with Discord.js and TypeScript",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "prestart": "yarn build-ts",
+    "start": "yarn build-ts && node dist/index.js",
     "develop": "yarn build-ts && tsc-watch --skipLibCheck --onSuccess 'node dist/index.js'",
     "build-ts": "tsc --skipLibCheck",
     "pretty": "prettier --check src",

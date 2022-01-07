@@ -2,7 +2,7 @@
   "name": "discord-bot-template",
   "version": "1.0.0",
   "description": "Discord bot template, built with Discord.js and TypeScript",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "yarn build-ts && node dist/index.js",
     "develop": "yarn build-ts && tsc-watch --skipLibCheck --onSuccess 'node dist/index.js'",

@@ -4,7 +4,7 @@
 
 ---
 
-Written with TypeScript and Discord.js library, this template will help you to create and deploy your discrod 🤖
+Written with TypeScript and Discord.js library, this template will help you to create and deploy your Discord bot 🤖
 
 ---
 
@@ -33,14 +33,6 @@ Written with TypeScript and Discord.js library, this template will help you to c
 | GUILD_ID          | Enter in development mode inside **Discord** (check settings->Advanced). Use RMB to copy the data |
 
 Consider looking into `.env.example`
-
-# Deploying to Heroku
-
-1. Create a (new) Heroku account
-2. Take a look into `Procfile` on `production` branch
-3. Build bot and push `build` folder into separate branch (or use `production` branch from this repo)
-4. Connect Heroku account with your GitHub repo with your bot and `Deploy` the bot to Heroku
-5. On Heroku dashboard go to `Resources`, disable `web` and enable `worker`
 
 ---
 

@@ -36,6 +36,16 @@ Consider looking into `.env.example`
 
 ---
 
+## Deploying to Heroku
+
+1. Create a (new) Heroku account
+2. Take a look into `Procfile` on `production` branch
+3. Build bot and push `build` folder into separate branch (or use `production` branch from this repo)
+4. Connect Heroku account with your GitHub repo with your bot and `Deploy` the bot to Heroku
+5. On Heroku dashboard go to `Resources`, disable `web` and enable `worker`
+
+---
+
 <a href="https://www.buymeacoffee.com/tdamer"><img src="https://img.buymeacoffee.com/button-api/?text=Support me with a coffee&emoji=☕️&slug=tdamer&button_colour=ffcc33&font_colour=000&font_family=Lato&outline_colour=000&coffee_colour=000"></a>
 
 [discorddevs]: https://discord.com/developers

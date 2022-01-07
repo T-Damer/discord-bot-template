@@ -22,7 +22,8 @@
   "repository": "https://github.com/T-Damer/discord-bot-template",
   "license": "MIT",
   "engines": {
-    "node": "^16.13.1"
+    "node": "^16.13.1",
+    "yarn": "^3.1.0"
   },
   "devDependencies": {
     "@types/express": "4.17.13",

@@ -1,1 +1,1 @@
-worker: node ../dist/index.js
+worker: yarn start

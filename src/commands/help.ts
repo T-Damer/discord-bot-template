@@ -1,8 +1,4 @@
-import {
-  Client,
-  CommandInteraction,
-  TextChannel,
-} from 'discord.js'
+import { Client, CommandInteraction, TextChannel } from 'discord.js'
 import { SlashCommandBuilder } from '@discordjs/builders'
 
 export const data = new SlashCommandBuilder()
@@ -15,28 +11,20 @@ export const data = new SlashCommandBuilder()
       .setRequired(true)
   )
 
-export async function execute(
-  interaction: CommandInteraction,
-  client: Client
-) {
+export async function execute(interaction: CommandInteraction, client: Client) {
   if (!interaction?.channelId) {
     return
   }
-  const channel = await client.channels.fetch(
-    interaction.channelId
-  )
+  const channel = await client.channels.fetch(interaction.channelId)
   if (!channel || channel.type !== 'GUILD_TEXT') {
     return
   }
-  const thread = await (
-    channel as TextChannel
-  ).threads.create({
+  const thread = await (channel as TextChannel).threads.create({
     name: `support-${Date.now()}`,
     reason: `Support ticket ${Date.now()}`,
   })
 
-  const problemDescription = interaction.options.data[0]
-    .value as string
+  const problemDescription = interaction.options.data[0].value as string
   const { user } = interaction
   await thread.send(`**User:** <${user}>
   **Problem:**: ${problemDescription}`)

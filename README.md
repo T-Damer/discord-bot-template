@@ -1,9 +1,5 @@
 # [Discord bot template](https://discord.com/api/oauth2/authorize?client_id=928264902181789806&permissions=0&scope=bot%20applications.commands)
 
-<a href="https://discord.com/api/oauth2/authorize?client_id=928264902181789806&permissions=0&scope=bot%20applications.commands"><img src="https://user-images.githubusercontent.com/49658988/146060134-e174115a-75f3-4b9e-922d-a76be3606b40.png" height="200px" width="200px" /></a>
-
----
-
 Written with TypeScript and Discord.js library, this template will help you to create and deploy your Discord 🤖
 
 <a href="https://discord.com/api/oauth2/authorize?client_id=928264902181789806&permissions=0&scope=bot%20applications.commands"><img src="https://user-images.githubusercontent.com/49658988/148528450-63d0f1d7-19e7-40d5-9166-e6f10b82ee39.png" width="150"/></a>
@@ -30,8 +26,8 @@ Written with TypeScript and Discord.js library, this template will help you to c
 
 | Name              | Description                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------- |
-| DISCORD_BOT_TOKEN | In [discord for developers](discorddevs) go to `bot` tab and click `Regenerate` button            |
-| CLIENT_ID         | Get it in `General Information` tab inside [discord for developers](discorddevs)                  |
+| DISCORD_BOT_TOKEN | In [discord for developers](discordDevs) go to `bot` tab and click `Reset token` button            |
+| CLIENT_ID         | Get it in `General Information` tab inside [discord for developers](discordDevs)                  |
 | GUILD_ID          | Enter in development mode inside **Discord** (check settings->Advanced). Use RMB to copy the data |
 
 Consider looking into `.env.example`
@@ -48,4 +44,4 @@ Consider looking into `.env.example`
 
 <a href="https://www.buymeacoffee.com/tdamer"><img src="https://img.buymeacoffee.com/button-api/?text=Support me with a coffee&emoji=☕️&slug=tdamer&button_colour=ffcc33&font_colour=000&font_family=Lato&outline_colour=000&coffee_colour=000"></a>
 
-[discorddevs]: https://discord.com/developers
+[discordDevs]: https://discord.com/developers

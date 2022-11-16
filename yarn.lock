@@ -1133,7 +1133,7 @@ __metadata:
     eslint: ^8.27.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-import: ^2.25.4
-    eslint-plugin-no-relative-import-paths: ^1.2.0
+    eslint-plugin-no-relative-import-paths: ^1.4.0
     eslint-plugin-node: ^11.1.0
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-sort-imports-es6-autofix: ^0.6.0
@@ -1400,10 +1400,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-no-relative-import-paths@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "eslint-plugin-no-relative-import-paths@npm:1.2.0"
-  checksum: e61c5e397360307b1aac25eac1c70735bece95a98d8b956f665c7fec4342d0513b59f959fdc7c217434038be9973b6e8a15b150274896d5d541e87d8a5db62dc
+"eslint-plugin-no-relative-import-paths@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "eslint-plugin-no-relative-import-paths@npm:1.4.0"
+  checksum: 688ecb019467b2ff5622ad1e2013f1c885d092e0ba7131f244e6341b1b2ffd38b30cc72a2581237314d046695fda7d21ae5f97b6939d13a699a412aed3317b60
   languageName: node
   linkType: hard
 
@@ -1888,13 +1888,6 @@ __metadata:
   version: 1.1.1
   resolution: "function-bind@npm:1.1.1"
   checksum: b32fbaebb3f8ec4969f033073b43f5c8befbb58f1a79e12f1d7490358150359ebd92f49e72ff0144f65f2c48ea2a605bff2d07965f548f6474fd8efd95bf361a
-  languageName: node
-  linkType: hard
-
-"functional-red-black-tree@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "functional-red-black-tree@npm:1.0.1"
-  checksum: ca6c170f37640e2d94297da8bb4bf27a1d12bea3e00e6a3e007fd7aa32e37e000f5772acf941b4e4f3cf1c95c3752033d0c509af157ad8f526e7f00723b9eb9f
   languageName: node
   linkType: hard
 

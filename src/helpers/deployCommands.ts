@@ -1,6 +1,6 @@
 import * as commandModules from '@/commands/index'
 import { REST } from '@discordjs/rest'
-import { Routes } from 'discord-api-types/v9'
+import { Routes } from 'discord-api-types/v10'
 import cleanEnv from '@/helpers/env'
 
 type Command = {
@@ -10,18 +10,15 @@ type Command = {
 export default async function deployCommands() {
   const commands: unknown[] = []
 
-  for (const module of Object.values<Command>(commandModules)) {
+  for (const module of Object.values<Command>(commandModules))
     commands.push(module.data)
-  }
 
-  const rest = new REST({ version: '9' }).setToken(cleanEnv.DISCORD_BOT_TOKEN)
+  const rest = new REST({ version: '10' }).setToken(cleanEnv.DISCORD_BOT_TOKEN)
 
   try {
     await rest.put(
       Routes.applicationGuildCommands(cleanEnv.CLIENT_ID, cleanEnv.GUILD_ID),
-      {
-        body: commands,
-      }
+      { body: commands }
     )
   } catch (error) {
     console.error(error)

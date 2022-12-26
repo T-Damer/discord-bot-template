@@ -1,24 +1,22 @@
-import { Client, CommandInteraction, TextChannel } from 'discord.js'
 import { SlashCommandBuilder } from '@discordjs/builders'
+import { Client, CommandInteraction, TextChannel, Collection } from 'discord.js'
 
 export const data = new SlashCommandBuilder()
   .setName('help')
   .setDescription('Returns help ticket')
   .addStringOption((option) =>
     option
-      .setName('deiscription')
+      .setName('description')
       .setDescription('Describe your problem')
       .setRequired(true)
   )
 
 export async function execute(interaction: CommandInteraction, client: Client) {
-  if (!interaction?.channelId) {
-    return
-  }
+  if (!interaction?.channelId) return
+
   const channel = await client.channels.fetch(interaction.channelId)
-  if (!channel || channel.type !== 'GUILD_TEXT') {
-    return
-  }
+  if (!channel || channel.type !== Collection.ChannelType.GuildText) return
+
   const thread = await (channel as TextChannel).threads.create({
     name: `support-${Date.now()}`,
     reason: `Support ticket ${Date.now()}`,
@@ -26,8 +24,7 @@ export async function execute(interaction: CommandInteraction, client: Client) {
 
   const problemDescription = interaction.options.data[0].value as string
   const { user } = interaction
-  await thread.send(`**User:** <${user}>
-  **Problem:**: ${problemDescription}`)
+  await thread.send(`**User:** <${user}> **Problem:**: ${problemDescription}`)
 
   // TODO: create a ticket and store it in database
 

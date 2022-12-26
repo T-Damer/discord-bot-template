@@ -1,14 +1,14 @@
 import * as commandModules from '@/commands/index'
-import { Client, Intents } from 'discord.js'
+import { Client, IntentsBitField } from 'discord.js'
 import config from '@/helpers/env'
 
 const commands = Object(commandModules)
 
 export const client = new Client({
   intents: [
-    Intents.FLAGS.GUILDS,
-    Intents.FLAGS.GUILD_MESSAGES,
-    Intents.FLAGS.DIRECT_MESSAGES,
+    IntentsBitField.Flags.Guilds,
+    IntentsBitField.Flags.GuildMessages,
+    IntentsBitField.Flags.DirectMessages,
   ],
 })
 
@@ -21,13 +21,11 @@ export async function startBot() {
   })
 
   client.on('interactionCreate', (interaction) => {
-    if (!interaction.isCommand()) {
-      return
-    }
+    if (!interaction.isCommand()) return
+
     const { commandName } = interaction
-    if (commands[commandName]) {
+    if (commands[commandName])
       commands[commandName].execute(interaction, client)
-    }
   })
 
   await client.login(config.DISCORD_BOT_TOKEN)

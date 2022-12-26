@@ -1,5 +1,5 @@
-import { SlashCommandBuilder } from '@discordjs/builders'
 import { Client, CommandInteraction, TextChannel } from 'discord.js'
+import { SlashCommandBuilder } from '@discordjs/builders'
 
 export const data = new SlashCommandBuilder()
   .setName('help')

@@ -1,6 +1,6 @@
-import { Routes } from 'discord-api-types/v10'
 import * as commandModules from '@/commands/index'
 import { REST } from '@discordjs/rest'
+import { Routes } from 'discord-api-types/v10'
 import cleanEnv from '@/helpers/env'
 
 type Command = {

@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from '@discordjs/builders'
-import { Client, CommandInteraction, TextChannel, Collection } from 'discord.js'
+import { Client, CommandInteraction, TextChannel } from 'discord.js'
 
 export const data = new SlashCommandBuilder()
   .setName('help')
@@ -15,7 +15,7 @@ export async function execute(interaction: CommandInteraction, client: Client) {
   if (!interaction?.channelId) return
 
   const channel = await client.channels.fetch(interaction.channelId)
-  if (!channel || channel.type !== Collection.ChannelType.GuildText) return
+  if (!channel) return
 
   const thread = await (channel as TextChannel).threads.create({
     name: `support-${Date.now()}`,
